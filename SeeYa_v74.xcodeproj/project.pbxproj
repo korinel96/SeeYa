@@ -10,11 +10,36 @@
 		C18B71A01AD443DD0031A04F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C18B719F1AD443DD0031A04F /* main.m */; };
 		C18B71A31AD443DD0031A04F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C18B71A21AD443DD0031A04F /* AppDelegate.m */; };
 		C18B71A61AD443DD0031A04F /* SeeYa_v74.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C18B71A41AD443DD0031A04F /* SeeYa_v74.xcdatamodeld */; };
-		C18B71A91AD443DD0031A04F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C18B71A81AD443DD0031A04F /* ViewController.m */; };
+		C18B71A91AD443DD0031A04F /* AdressEnter.m in Sources */ = {isa = PBXBuildFile; fileRef = C18B71A81AD443DD0031A04F /* AdressEnter.m */; };
 		C18B71AC1AD443DD0031A04F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C18B71AA1AD443DD0031A04F /* Main.storyboard */; };
 		C18B71AE1AD443DD0031A04F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C18B71AD1AD443DD0031A04F /* Images.xcassets */; };
 		C18B71B11AD443DD0031A04F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C18B71AF1AD443DD0031A04F /* LaunchScreen.xib */; };
 		C18B71BD1AD443DD0031A04F /* SeeYa_v74Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = C18B71BC1AD443DD0031A04F /* SeeYa_v74Tests.m */; };
+		C18B71C71AD44A4B0031A04F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C18B71C61AD44A4B0031A04F /* SystemConfiguration.framework */; };
+		C18B71C91AD44A540031A04F /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C18B71C81AD44A540031A04F /* QuartzCore.framework */; };
+		C18B71CB1AD44A5E0031A04F /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C18B71CA1AD44A5E0031A04F /* OpenGLES.framework */; };
+		C18B71CD1AD44A690031A04F /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C18B71CC1AD44A690031A04F /* libz.dylib */; };
+		C18B71CF1AD44A7A0031A04F /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C18B71CE1AD44A7A0031A04F /* libicucore.dylib */; };
+		C18B71D11AD44A860031A04F /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = C18B71D01AD44A860031A04F /* libc++.dylib */; };
+		C18B71D31AD44A910031A04F /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C18B71D21AD44A910031A04F /* ImageIO.framework */; };
+		C18B71D51AD44A9C0031A04F /* GLKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C18B71D41AD44A9C0031A04F /* GLKit.framework */; };
+		C18B71D71AD44AA50031A04F /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C18B71D61AD44AA50031A04F /* CoreText.framework */; };
+		C18B71D91AD44AB40031A04F /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C18B71D81AD44AB40031A04F /* CoreLocation.framework */; };
+		C18B71DB1AD44ABF0031A04F /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C18B71DA1AD44ABF0031A04F /* CoreData.framework */; };
+		C18B71DD1AD44AC90031A04F /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C18B71DC1AD44AC90031A04F /* AVFoundation.framework */; };
+		C18B71DF1AD44AE60031A04F /* GoogleMaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C18B71DE1AD44AE60031A04F /* GoogleMaps.framework */; };
+		C18B71EA1AD481700031A04F /* check.png in Resources */ = {isa = PBXBuildFile; fileRef = C18B71E21AD481700031A04F /* check.png */; };
+		C18B71EB1AD481700031A04F /* library.png in Resources */ = {isa = PBXBuildFile; fileRef = C18B71E31AD481700031A04F /* library.png */; };
+		C18B71EC1AD481700031A04F /* meal.png in Resources */ = {isa = PBXBuildFile; fileRef = C18B71E41AD481700031A04F /* meal.png */; };
+		C18B71ED1AD481700031A04F /* museum.png in Resources */ = {isa = PBXBuildFile; fileRef = C18B71E51AD481700031A04F /* museum.png */; };
+		C18B71EE1AD481700031A04F /* store.png in Resources */ = {isa = PBXBuildFile; fileRef = C18B71E61AD481700031A04F /* store.png */; };
+		C18B71EF1AD481700031A04F /* park.png in Resources */ = {isa = PBXBuildFile; fileRef = C18B71E71AD481700031A04F /* park.png */; };
+		C18B71F01AD481700031A04F /* plus.png in Resources */ = {isa = PBXBuildFile; fileRef = C18B71E81AD481700031A04F /* plus.png */; };
+		C18B71F11AD481700031A04F /* nightclub.png in Resources */ = {isa = PBXBuildFile; fileRef = C18B71E91AD481700031A04F /* nightclub.png */; };
+		C18B71F41AD489820031A04F /* ContainerView.m in Sources */ = {isa = PBXBuildFile; fileRef = C18B71F31AD489820031A04F /* ContainerView.m */; };
+		C18B71F81AD495D60031A04F /* TagTable.m in Sources */ = {isa = PBXBuildFile; fileRef = C18B71F71AD495D60031A04F /* TagTable.m */; };
+		C18B71FB1AD49AC90031A04F /* MapView.m in Sources */ = {isa = PBXBuildFile; fileRef = C18B71FA1AD49AC90031A04F /* MapView.m */; };
+		C18B71FD1AD49CA40031A04F /* GoogleMaps.bundle in Frameworks */ = {isa = PBXBuildFile; fileRef = C18B71FC1AD49CA40031A04F /* GoogleMaps.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,17 +56,46 @@
 		C18B719A1AD443DD0031A04F /* SeeYa_v74.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeeYa_v74.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C18B719E1AD443DD0031A04F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C18B719F1AD443DD0031A04F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		C18B71A11AD443DD0031A04F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		C18B71A21AD443DD0031A04F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C18B71A11AD443DD0031A04F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = SeeYa_v74/AppDelegate.h; sourceTree = "<group>"; };
+		C18B71A21AD443DD0031A04F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = SeeYa_v74/AppDelegate.m; sourceTree = "<group>"; };
 		C18B71A51AD443DD0031A04F /* SeeYa_v74.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SeeYa_v74.xcdatamodel; sourceTree = "<group>"; };
-		C18B71A71AD443DD0031A04F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		C18B71A81AD443DD0031A04F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C18B71A71AD443DD0031A04F /* AdressEnter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdressEnter.h; sourceTree = "<group>"; };
+		C18B71A81AD443DD0031A04F /* AdressEnter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AdressEnter.m; sourceTree = "<group>"; };
 		C18B71AB1AD443DD0031A04F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C18B71AD1AD443DD0031A04F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		C18B71B01AD443DD0031A04F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		C18B71B61AD443DD0031A04F /* SeeYa_v74Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SeeYa_v74Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C18B71BB1AD443DD0031A04F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C18B71BC1AD443DD0031A04F /* SeeYa_v74Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SeeYa_v74Tests.m; sourceTree = "<group>"; };
+		C18B71C61AD44A4B0031A04F /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		C18B71C81AD44A540031A04F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		C18B71CA1AD44A5E0031A04F /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		C18B71CC1AD44A690031A04F /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		C18B71CE1AD44A7A0031A04F /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
+		C18B71D01AD44A860031A04F /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		C18B71D21AD44A910031A04F /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		C18B71D41AD44A9C0031A04F /* GLKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLKit.framework; path = System/Library/Frameworks/GLKit.framework; sourceTree = SDKROOT; };
+		C18B71D61AD44AA50031A04F /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		C18B71D81AD44AB40031A04F /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		C18B71DA1AD44ABF0031A04F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		C18B71DC1AD44AC90031A04F /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		C18B71DE1AD44AE60031A04F /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMaps.framework; path = "../../Dev/GoogleMaps-iOS-1.9.2/GoogleMaps.framework"; sourceTree = "<group>"; };
+		C18B71E01AD47E3E0031A04F /* Global.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Global.h; sourceTree = "<group>"; };
+		C18B71E21AD481700031A04F /* check.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = check.png; sourceTree = "<group>"; };
+		C18B71E31AD481700031A04F /* library.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = library.png; sourceTree = "<group>"; };
+		C18B71E41AD481700031A04F /* meal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = meal.png; sourceTree = "<group>"; };
+		C18B71E51AD481700031A04F /* museum.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = museum.png; sourceTree = "<group>"; };
+		C18B71E61AD481700031A04F /* store.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = store.png; sourceTree = "<group>"; };
+		C18B71E71AD481700031A04F /* park.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = park.png; sourceTree = "<group>"; };
+		C18B71E81AD481700031A04F /* plus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = plus.png; sourceTree = "<group>"; };
+		C18B71E91AD481700031A04F /* nightclub.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nightclub.png; sourceTree = "<group>"; };
+		C18B71F21AD489820031A04F /* ContainerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContainerView.h; sourceTree = "<group>"; };
+		C18B71F31AD489820031A04F /* ContainerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContainerView.m; sourceTree = "<group>"; };
+		C18B71F61AD495D60031A04F /* TagTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TagTable.h; sourceTree = "<group>"; };
+		C18B71F71AD495D60031A04F /* TagTable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TagTable.m; sourceTree = "<group>"; };
+		C18B71F91AD49AC90031A04F /* MapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapView.h; sourceTree = "<group>"; };
+		C18B71FA1AD49AC90031A04F /* MapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapView.m; sourceTree = "<group>"; };
+		C18B71FC1AD49CA40031A04F /* GoogleMaps.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = "../../Dev/GoogleMaps-iOS-1.9.2/GoogleMaps.framework/Versions/A/Resources/GoogleMaps.bundle"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +103,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C18B71FD1AD49CA40031A04F /* GoogleMaps.bundle in Frameworks */,
+				C18B71DF1AD44AE60031A04F /* GoogleMaps.framework in Frameworks */,
+				C18B71DD1AD44AC90031A04F /* AVFoundation.framework in Frameworks */,
+				C18B71DB1AD44ABF0031A04F /* CoreData.framework in Frameworks */,
+				C18B71D91AD44AB40031A04F /* CoreLocation.framework in Frameworks */,
+				C18B71D71AD44AA50031A04F /* CoreText.framework in Frameworks */,
+				C18B71D51AD44A9C0031A04F /* GLKit.framework in Frameworks */,
+				C18B71D31AD44A910031A04F /* ImageIO.framework in Frameworks */,
+				C18B71D11AD44A860031A04F /* libc++.dylib in Frameworks */,
+				C18B71CF1AD44A7A0031A04F /* libicucore.dylib in Frameworks */,
+				C18B71CD1AD44A690031A04F /* libz.dylib in Frameworks */,
+				C18B71CB1AD44A5E0031A04F /* OpenGLES.framework in Frameworks */,
+				C18B71C91AD44A540031A04F /* QuartzCore.framework in Frameworks */,
+				C18B71C71AD44A4B0031A04F /* SystemConfiguration.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +133,20 @@
 		C18B71911AD443DD0031A04F = {
 			isa = PBXGroup;
 			children = (
+				C18B71FC1AD49CA40031A04F /* GoogleMaps.bundle */,
+				C18B71DE1AD44AE60031A04F /* GoogleMaps.framework */,
+				C18B71DC1AD44AC90031A04F /* AVFoundation.framework */,
+				C18B71DA1AD44ABF0031A04F /* CoreData.framework */,
+				C18B71D81AD44AB40031A04F /* CoreLocation.framework */,
+				C18B71D61AD44AA50031A04F /* CoreText.framework */,
+				C18B71D41AD44A9C0031A04F /* GLKit.framework */,
+				C18B71D21AD44A910031A04F /* ImageIO.framework */,
+				C18B71D01AD44A860031A04F /* libc++.dylib */,
+				C18B71CE1AD44A7A0031A04F /* libicucore.dylib */,
+				C18B71CC1AD44A690031A04F /* libz.dylib */,
+				C18B71CA1AD44A5E0031A04F /* OpenGLES.framework */,
+				C18B71C81AD44A540031A04F /* QuartzCore.framework */,
+				C18B71C61AD44A4B0031A04F /* SystemConfiguration.framework */,
 				C18B719C1AD443DD0031A04F /* SeeYa_v74 */,
 				C18B71B91AD443DD0031A04F /* SeeYa_v74Tests */,
 				C18B719B1AD443DD0031A04F /* Products */,
@@ -83,10 +165,17 @@
 		C18B719C1AD443DD0031A04F /* SeeYa_v74 */ = {
 			isa = PBXGroup;
 			children = (
-				C18B71A11AD443DD0031A04F /* AppDelegate.h */,
-				C18B71A21AD443DD0031A04F /* AppDelegate.m */,
-				C18B71A71AD443DD0031A04F /* ViewController.h */,
-				C18B71A81AD443DD0031A04F /* ViewController.m */,
+				C18B71F51AD495730031A04F /* Other */,
+				C18B71E11AD480920031A04F /* Images */,
+				C18B71A71AD443DD0031A04F /* AdressEnter.h */,
+				C18B71A81AD443DD0031A04F /* AdressEnter.m */,
+				C18B71E01AD47E3E0031A04F /* Global.h */,
+				C18B71F61AD495D60031A04F /* TagTable.h */,
+				C18B71F71AD495D60031A04F /* TagTable.m */,
+				C18B71F91AD49AC90031A04F /* MapView.h */,
+				C18B71FA1AD49AC90031A04F /* MapView.m */,
+				C18B71F21AD489820031A04F /* ContainerView.h */,
+				C18B71F31AD489820031A04F /* ContainerView.m */,
 				C18B71AA1AD443DD0031A04F /* Main.storyboard */,
 				C18B71AD1AD443DD0031A04F /* Images.xcassets */,
 				C18B71AF1AD443DD0031A04F /* LaunchScreen.xib */,
@@ -120,6 +209,32 @@
 				C18B71BB1AD443DD0031A04F /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C18B71E11AD480920031A04F /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				C18B71E21AD481700031A04F /* check.png */,
+				C18B71E31AD481700031A04F /* library.png */,
+				C18B71E41AD481700031A04F /* meal.png */,
+				C18B71E51AD481700031A04F /* museum.png */,
+				C18B71E61AD481700031A04F /* store.png */,
+				C18B71E71AD481700031A04F /* park.png */,
+				C18B71E81AD481700031A04F /* plus.png */,
+				C18B71E91AD481700031A04F /* nightclub.png */,
+			);
+			name = Images;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		C18B71F51AD495730031A04F /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				C18B71A11AD443DD0031A04F /* AppDelegate.h */,
+				C18B71A21AD443DD0031A04F /* AppDelegate.m */,
+			);
+			name = Other;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,8 +317,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C18B71EB1AD481700031A04F /* library.png in Resources */,
+				C18B71F01AD481700031A04F /* plus.png in Resources */,
+				C18B71EE1AD481700031A04F /* store.png in Resources */,
+				C18B71EF1AD481700031A04F /* park.png in Resources */,
 				C18B71AC1AD443DD0031A04F /* Main.storyboard in Resources */,
+				C18B71F11AD481700031A04F /* nightclub.png in Resources */,
+				C18B71EC1AD481700031A04F /* meal.png in Resources */,
 				C18B71B11AD443DD0031A04F /* LaunchScreen.xib in Resources */,
+				C18B71ED1AD481700031A04F /* museum.png in Resources */,
+				C18B71EA1AD481700031A04F /* check.png in Resources */,
 				C18B71AE1AD443DD0031A04F /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -224,8 +347,11 @@
 			files = (
 				C18B71A31AD443DD0031A04F /* AppDelegate.m in Sources */,
 				C18B71A61AD443DD0031A04F /* SeeYa_v74.xcdatamodeld in Sources */,
-				C18B71A91AD443DD0031A04F /* ViewController.m in Sources */,
+				C18B71A91AD443DD0031A04F /* AdressEnter.m in Sources */,
+				C18B71F41AD489820031A04F /* ContainerView.m in Sources */,
+				C18B71FB1AD49AC90031A04F /* MapView.m in Sources */,
 				C18B71A01AD443DD0031A04F /* main.m in Sources */,
+				C18B71F81AD495D60031A04F /* TagTable.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -349,8 +475,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/ImS/MEGA/Dev/GoogleMaps-iOS-1.9.2",
+				);
 				INFOPLIST_FILE = SeeYa_v74/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -359,8 +490,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/ImS/MEGA/Dev/GoogleMaps-iOS-1.9.2",
+				);
 				INFOPLIST_FILE = SeeYa_v74/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -418,6 +554,7 @@
 				C18B71C21AD443DD0031A04F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		C18B71C31AD443DD0031A04F /* Build configuration list for PBXNativeTarget "SeeYa_v74Tests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +563,7 @@
 				C18B71C51AD443DD0031A04F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
