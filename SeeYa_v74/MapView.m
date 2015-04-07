@@ -58,7 +58,6 @@
     marker3.title = place3_ad[0];
     // marker3.snippet = place3_ad[1];
     marker3.map = mapView_;
-    NSLog(@"end");
 }
 
 @end
