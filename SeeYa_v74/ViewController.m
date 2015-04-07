@@ -12,6 +12,8 @@
 
 @end
 
+//DAMN HOW IT WORKS?!
+
 @implementation ViewController
 
 - (void)viewDidLoad {
