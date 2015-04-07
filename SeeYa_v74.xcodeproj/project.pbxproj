@@ -1,0 +1,446 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C18B71A01AD443DD0031A04F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C18B719F1AD443DD0031A04F /* main.m */; };
+		C18B71A31AD443DD0031A04F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C18B71A21AD443DD0031A04F /* AppDelegate.m */; };
+		C18B71A61AD443DD0031A04F /* SeeYa_v74.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C18B71A41AD443DD0031A04F /* SeeYa_v74.xcdatamodeld */; };
+		C18B71A91AD443DD0031A04F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C18B71A81AD443DD0031A04F /* ViewController.m */; };
+		C18B71AC1AD443DD0031A04F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C18B71AA1AD443DD0031A04F /* Main.storyboard */; };
+		C18B71AE1AD443DD0031A04F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C18B71AD1AD443DD0031A04F /* Images.xcassets */; };
+		C18B71B11AD443DD0031A04F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = C18B71AF1AD443DD0031A04F /* LaunchScreen.xib */; };
+		C18B71BD1AD443DD0031A04F /* SeeYa_v74Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = C18B71BC1AD443DD0031A04F /* SeeYa_v74Tests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C18B71B71AD443DD0031A04F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C18B71921AD443DD0031A04F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C18B71991AD443DD0031A04F;
+			remoteInfo = SeeYa_v74;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C18B719A1AD443DD0031A04F /* SeeYa_v74.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeeYa_v74.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C18B719E1AD443DD0031A04F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C18B719F1AD443DD0031A04F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C18B71A11AD443DD0031A04F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C18B71A21AD443DD0031A04F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C18B71A51AD443DD0031A04F /* SeeYa_v74.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SeeYa_v74.xcdatamodel; sourceTree = "<group>"; };
+		C18B71A71AD443DD0031A04F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		C18B71A81AD443DD0031A04F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C18B71AB1AD443DD0031A04F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C18B71AD1AD443DD0031A04F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		C18B71B01AD443DD0031A04F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		C18B71B61AD443DD0031A04F /* SeeYa_v74Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SeeYa_v74Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C18B71BB1AD443DD0031A04F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C18B71BC1AD443DD0031A04F /* SeeYa_v74Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SeeYa_v74Tests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C18B71971AD443DD0031A04F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C18B71B31AD443DD0031A04F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C18B71911AD443DD0031A04F = {
+			isa = PBXGroup;
+			children = (
+				C18B719C1AD443DD0031A04F /* SeeYa_v74 */,
+				C18B71B91AD443DD0031A04F /* SeeYa_v74Tests */,
+				C18B719B1AD443DD0031A04F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C18B719B1AD443DD0031A04F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C18B719A1AD443DD0031A04F /* SeeYa_v74.app */,
+				C18B71B61AD443DD0031A04F /* SeeYa_v74Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C18B719C1AD443DD0031A04F /* SeeYa_v74 */ = {
+			isa = PBXGroup;
+			children = (
+				C18B71A11AD443DD0031A04F /* AppDelegate.h */,
+				C18B71A21AD443DD0031A04F /* AppDelegate.m */,
+				C18B71A71AD443DD0031A04F /* ViewController.h */,
+				C18B71A81AD443DD0031A04F /* ViewController.m */,
+				C18B71AA1AD443DD0031A04F /* Main.storyboard */,
+				C18B71AD1AD443DD0031A04F /* Images.xcassets */,
+				C18B71AF1AD443DD0031A04F /* LaunchScreen.xib */,
+				C18B71A41AD443DD0031A04F /* SeeYa_v74.xcdatamodeld */,
+				C18B719D1AD443DD0031A04F /* Supporting Files */,
+			);
+			path = SeeYa_v74;
+			sourceTree = "<group>";
+		};
+		C18B719D1AD443DD0031A04F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C18B719E1AD443DD0031A04F /* Info.plist */,
+				C18B719F1AD443DD0031A04F /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C18B71B91AD443DD0031A04F /* SeeYa_v74Tests */ = {
+			isa = PBXGroup;
+			children = (
+				C18B71BC1AD443DD0031A04F /* SeeYa_v74Tests.m */,
+				C18B71BA1AD443DD0031A04F /* Supporting Files */,
+			);
+			path = SeeYa_v74Tests;
+			sourceTree = "<group>";
+		};
+		C18B71BA1AD443DD0031A04F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C18B71BB1AD443DD0031A04F /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C18B71991AD443DD0031A04F /* SeeYa_v74 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C18B71C01AD443DD0031A04F /* Build configuration list for PBXNativeTarget "SeeYa_v74" */;
+			buildPhases = (
+				C18B71961AD443DD0031A04F /* Sources */,
+				C18B71971AD443DD0031A04F /* Frameworks */,
+				C18B71981AD443DD0031A04F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SeeYa_v74;
+			productName = SeeYa_v74;
+			productReference = C18B719A1AD443DD0031A04F /* SeeYa_v74.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C18B71B51AD443DD0031A04F /* SeeYa_v74Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C18B71C31AD443DD0031A04F /* Build configuration list for PBXNativeTarget "SeeYa_v74Tests" */;
+			buildPhases = (
+				C18B71B21AD443DD0031A04F /* Sources */,
+				C18B71B31AD443DD0031A04F /* Frameworks */,
+				C18B71B41AD443DD0031A04F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C18B71B81AD443DD0031A04F /* PBXTargetDependency */,
+			);
+			name = SeeYa_v74Tests;
+			productName = SeeYa_v74Tests;
+			productReference = C18B71B61AD443DD0031A04F /* SeeYa_v74Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C18B71921AD443DD0031A04F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = "Sergey Im";
+				TargetAttributes = {
+					C18B71991AD443DD0031A04F = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					C18B71B51AD443DD0031A04F = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = C18B71991AD443DD0031A04F;
+					};
+				};
+			};
+			buildConfigurationList = C18B71951AD443DD0031A04F /* Build configuration list for PBXProject "SeeYa_v74" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C18B71911AD443DD0031A04F;
+			productRefGroup = C18B719B1AD443DD0031A04F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C18B71991AD443DD0031A04F /* SeeYa_v74 */,
+				C18B71B51AD443DD0031A04F /* SeeYa_v74Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C18B71981AD443DD0031A04F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C18B71AC1AD443DD0031A04F /* Main.storyboard in Resources */,
+				C18B71B11AD443DD0031A04F /* LaunchScreen.xib in Resources */,
+				C18B71AE1AD443DD0031A04F /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C18B71B41AD443DD0031A04F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C18B71961AD443DD0031A04F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C18B71A31AD443DD0031A04F /* AppDelegate.m in Sources */,
+				C18B71A61AD443DD0031A04F /* SeeYa_v74.xcdatamodeld in Sources */,
+				C18B71A91AD443DD0031A04F /* ViewController.m in Sources */,
+				C18B71A01AD443DD0031A04F /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C18B71B21AD443DD0031A04F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C18B71BD1AD443DD0031A04F /* SeeYa_v74Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C18B71B81AD443DD0031A04F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C18B71991AD443DD0031A04F /* SeeYa_v74 */;
+			targetProxy = C18B71B71AD443DD0031A04F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C18B71AA1AD443DD0031A04F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C18B71AB1AD443DD0031A04F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C18B71AF1AD443DD0031A04F /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C18B71B01AD443DD0031A04F /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C18B71BE1AD443DD0031A04F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C18B71BF1AD443DD0031A04F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C18B71C11AD443DD0031A04F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SeeYa_v74/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		C18B71C21AD443DD0031A04F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SeeYa_v74/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		C18B71C41AD443DD0031A04F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SeeYa_v74Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SeeYa_v74.app/SeeYa_v74";
+			};
+			name = Debug;
+		};
+		C18B71C51AD443DD0031A04F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SeeYa_v74Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SeeYa_v74.app/SeeYa_v74";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C18B71951AD443DD0031A04F /* Build configuration list for PBXProject "SeeYa_v74" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C18B71BE1AD443DD0031A04F /* Debug */,
+				C18B71BF1AD443DD0031A04F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C18B71C01AD443DD0031A04F /* Build configuration list for PBXNativeTarget "SeeYa_v74" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C18B71C11AD443DD0031A04F /* Debug */,
+				C18B71C21AD443DD0031A04F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		C18B71C31AD443DD0031A04F /* Build configuration list for PBXNativeTarget "SeeYa_v74Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C18B71C41AD443DD0031A04F /* Debug */,
+				C18B71C51AD443DD0031A04F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C18B71A41AD443DD0031A04F /* SeeYa_v74.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C18B71A51AD443DD0031A04F /* SeeYa_v74.xcdatamodel */,
+			);
+			currentVersion = C18B71A51AD443DD0031A04F /* SeeYa_v74.xcdatamodel */;
+			path = SeeYa_v74.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = C18B71921AD443DD0031A04F /* Project object */;
+}
