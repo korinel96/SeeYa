@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>316C7BAA-D02A-4CA1-A548-4CA8AFC46F29</string>
+	<key>IDESourceControlProjectName</key>
+	<string>SeeYa_v74</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>7021D295DF43B304108737F29687D5E315725CAC</key>
+		<string>https://bitbucket.org/Koreans/seeya.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>SeeYa_v74.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>7021D295DF43B304108737F29687D5E315725CAC</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://bitbucket.org/Koreans/seeya.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>7021D295DF43B304108737F29687D5E315725CAC</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>7021D295DF43B304108737F29687D5E315725CAC</string>
+			<key>IDESourceControlWCCName</key>
+			<string>SeeYa_v74</string>
+		</dict>
+	</array>
+</dict>
+</plist>
