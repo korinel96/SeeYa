@@ -19,6 +19,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    /*
+     UISlider* slider = [[UISlider alloc] initWithFrame:CGRectMake(26, 219, 264, 23)];
+     [self.view addSubview:slider];
+     [slider release];
+     */
     GMSCameraPosition *camera = [GMSCameraPosition cameraWithLatitude: MainPoint1
                                                             longitude: MainPoint2
                                                                  zoom:10];
@@ -58,6 +63,31 @@
     marker3.title = place3_ad[0];
     // marker3.snippet = place3_ad[1];
     marker3.map = mapView_;
+    
+    UISlider* slider = [[UISlider alloc] initWithFrame:CGRectMake(249, 299, 99, 23)];
+    [slider addTarget:self action:@selector(mySliderChanged:) forControlEvents:UIControlEventValueChanged];
+    [slider setBackgroundColor:[UIColor clearColor]];
+    slider.minimumValue = 3;
+    slider.maximumValue = 9;
+    slider.continuous = YES;
+    slider.value = 3;
+//  [slider release];
+    slider .transform = CGAffineTransformMakeRotation(-90.0*M_PI/180.0);
+    [mapView_ addSubview: slider];
+
 }
 
+-(NSNumber *)updateSliderStepValueWithSlider:(UISlider *)slider {
+    NSInteger sliderStepValue = 1.0f;
+    float newStep = roundf((slider.value) / sliderStepValue);
+    slider.value = newStep * sliderStepValue;
+ //       NSLog(@"%f",slider.value);
+    
+    return [NSNumber numberWithFloat:slider.value];
+}
+
+- (IBAction)mySliderChanged:(UISlider *)sender {
+    NSNumber *sliderStepValue = [self updateSliderStepValueWithSlider:sender];
+
+}
 @end
