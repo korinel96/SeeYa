@@ -39,9 +39,9 @@
 		C18B71F81AD495D60031A04F /* TagTable.m in Sources */ = {isa = PBXBuildFile; fileRef = C18B71F71AD495D60031A04F /* TagTable.m */; };
 		C18B71FB1AD49AC90031A04F /* MapView.m in Sources */ = {isa = PBXBuildFile; fileRef = C18B71FA1AD49AC90031A04F /* MapView.m */; };
 		C1A7967B1AD7D60A006A78A5 /* share2.png in Resources */ = {isa = PBXBuildFile; fileRef = C1A7967A1AD7D60A006A78A5 /* share2.png */; };
-		C1A7967F1AD7D87B006A78A5 /* share.png in Resources */ = {isa = PBXBuildFile; fileRef = C1A7967E1AD7D87B006A78A5 /* share.png */; };
 		C1B33D4A1AD4A30B006BBE7A /* GoogleMaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1B33D491AD4A30B006BBE7A /* GoogleMaps.framework */; };
 		C1B33D4C1AD4A331006BBE7A /* GoogleMaps.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C1B33D4B1AD4A331006BBE7A /* GoogleMaps.bundle */; };
+		C1E01AB21AD7F302009A118A /* share.png in Resources */ = {isa = PBXBuildFile; fileRef = C1E01AB11AD7F302009A118A /* share.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,9 +97,9 @@
 		C18B71F91AD49AC90031A04F /* MapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapView.h; sourceTree = "<group>"; };
 		C18B71FA1AD49AC90031A04F /* MapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapView.m; sourceTree = "<group>"; };
 		C1A7967A1AD7D60A006A78A5 /* share2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = share2.png; sourceTree = "<group>"; };
-		C1A7967E1AD7D87B006A78A5 /* share.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = share.png; sourceTree = "<group>"; };
 		C1B33D491AD4A30B006BBE7A /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMaps.framework; sourceTree = "<group>"; };
 		C1B33D4B1AD4A331006BBE7A /* GoogleMaps.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = "../../Dev/GoogleMaps-iOS-1.9.2/GoogleMaps.framework/Versions/A/Resources/GoogleMaps.bundle"; sourceTree = "<group>"; };
+		C1E01AB11AD7F302009A118A /* share.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = share.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -217,7 +217,7 @@
 		C18B71E11AD480920031A04F /* Images */ = {
 			isa = PBXGroup;
 			children = (
-				C1A7967E1AD7D87B006A78A5 /* share.png */,
+				C1E01AB11AD7F302009A118A /* share.png */,
 				C18B71E21AD481700031A04F /* check.png */,
 				C1A7967A1AD7D60A006A78A5 /* share2.png */,
 				C18B71E31AD481700031A04F /* library.png */,
@@ -327,9 +327,9 @@
 				C1A7967B1AD7D60A006A78A5 /* share2.png in Resources */,
 				C18B71EE1AD481700031A04F /* store.png in Resources */,
 				C1B33D4C1AD4A331006BBE7A /* GoogleMaps.bundle in Resources */,
-				C1A7967F1AD7D87B006A78A5 /* share.png in Resources */,
 				C18B71EF1AD481700031A04F /* park.png in Resources */,
 				C18B71AC1AD443DD0031A04F /* Main.storyboard in Resources */,
+				C1E01AB21AD7F302009A118A /* share.png in Resources */,
 				C18B71F11AD481700031A04F /* nightclub.png in Resources */,
 				C18B71EC1AD481700031A04F /* meal.png in Resources */,
 				C18B71B11AD443DD0031A04F /* LaunchScreen.xib in Resources */,
