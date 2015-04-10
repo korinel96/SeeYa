@@ -17,19 +17,16 @@
     GMSMapView *mapView_;
 }
 
+//@synthesize ShareButton;
+
 - (void)viewDidLoad {
     [super viewDidLoad];
-    /*
-     UISlider* slider = [[UISlider alloc] initWithFrame:CGRectMake(26, 219, 264, 23)];
-     [self.view addSubview:slider];
-     [slider release];
-     */
     GMSCameraPosition *camera = [GMSCameraPosition cameraWithLatitude: MainPoint1
                                                             longitude: MainPoint2
                                                                  zoom:10];
     mapView_ = [GMSMapView mapWithFrame:CGRectZero camera:camera];
-    mapView_.myLocationEnabled = YES;
-    mapView_.settings.myLocationButton = YES;
+  /*  mapView_.myLocationEnabled = YES;
+    mapView_.settings.myLocationButton = YES; */
     mapView_.settings.zoomGestures = YES;
     self.view = mapView_;
     
@@ -64,6 +61,10 @@
     // marker3.snippet = place3_ad[1];
     marker3.map = mapView_;
     
+    UIImage *btnImage = [UIImage imageNamed:@"share.png"];
+    [self.ShareButton setImage:btnImage forState:UIControlStateNormal];
+    self.ShareButton.tintColor = [UIColor grayColor];
+    
     UISlider* slider = [[UISlider alloc] initWithFrame:CGRectMake(249, 299, 99, 23)];
     [slider addTarget:self action:@selector(mySliderChanged:) forControlEvents:UIControlEventValueChanged];
     [slider setBackgroundColor:[UIColor clearColor]];
@@ -71,17 +72,14 @@
     slider.maximumValue = 9;
     slider.continuous = YES;
     slider.value = 3;
-//  [slider release];
     slider .transform = CGAffineTransformMakeRotation(-90.0*M_PI/180.0);
     [mapView_ addSubview: slider];
-
 }
 
 -(NSNumber *)updateSliderStepValueWithSlider:(UISlider *)slider {
     NSInteger sliderStepValue = 1.0f;
     float newStep = roundf((slider.value) / sliderStepValue);
     slider.value = newStep * sliderStepValue;
- //       NSLog(@"%f",slider.value);
     
     return [NSNumber numberWithFloat:slider.value];
 }
@@ -90,4 +88,12 @@
     NSNumber *sliderStepValue = [self updateSliderStepValueWithSlider:sender];
 
 }
+
+- (IBAction)ShareButtonAction:(id)sender{
+    NSString *message = @"AIM!";
+    NSArray *postItems = @[message];
+    UIActivityViewController *activityVC = [[UIActivityViewController alloc] initWithActivityItems:postItems applicationActivities:nil];
+    [self presentViewController:activityVC animated:NO completion:nil];
+}
+
 @end

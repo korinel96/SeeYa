@@ -83,7 +83,7 @@ NSString *KEY = @"AIzaSyChBwHJcC-oiESi-7qJ6htfbz3ivtYSJTg";
         Adress2 = [Adress2 stringByAppendingString:@"Moscow"];
         [self recieve_coor];
         //переходн на след. view
-        ContainerView *gotoVC = [self.storyboard instantiateViewControllerWithIdentifier:@"SecondView"];
+        ContainerView *gotoVC = [self.storyboard instantiateViewControllerWithIdentifier:@"SecondView2"];
         [self.navigationController pushViewController:gotoVC animated:YES];
     }
     

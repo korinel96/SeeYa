@@ -17,5 +17,5 @@
 
 -(void) queryGooglePlaces: (NSString *) googleType ;
 -(void) fetchedData:(NSData *)responseData;
-
+@property (weak, nonatomic) IBOutlet UIButton *ShareButton;
 @end

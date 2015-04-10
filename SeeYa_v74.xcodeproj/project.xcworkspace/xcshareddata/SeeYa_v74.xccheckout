@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>316C7BAA-D02A-4CA1-A548-4CA8AFC46F29</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>SeeYa_v74</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>7021D295DF43B304108737F29687D5E315725CAC</key>
 		<string>https://bitbucket.org/Koreans/seeya.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>SeeYa_v74.xcodeproj/project.xcworkspace</string>
+	<string>SeeYa_v74.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>7021D295DF43B304108737F29687D5E315725CAC</key>
