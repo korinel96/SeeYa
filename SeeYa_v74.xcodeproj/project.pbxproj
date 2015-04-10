@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		917DD5ED1AD7EF4C0095C18C /* GoogleMaps.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 917DD5EC1AD7EF4C0095C18C /* GoogleMaps.bundle */; };
 		C18B71A01AD443DD0031A04F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C18B719F1AD443DD0031A04F /* main.m */; };
 		C18B71A31AD443DD0031A04F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C18B71A21AD443DD0031A04F /* AppDelegate.m */; };
 		C18B71A61AD443DD0031A04F /* SeeYa_v74.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C18B71A41AD443DD0031A04F /* SeeYa_v74.xcdatamodeld */; };
@@ -39,7 +40,6 @@
 		C18B71F81AD495D60031A04F /* TagTable.m in Sources */ = {isa = PBXBuildFile; fileRef = C18B71F71AD495D60031A04F /* TagTable.m */; };
 		C18B71FB1AD49AC90031A04F /* MapView.m in Sources */ = {isa = PBXBuildFile; fileRef = C18B71FA1AD49AC90031A04F /* MapView.m */; };
 		C1B33D4A1AD4A30B006BBE7A /* GoogleMaps.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C1B33D491AD4A30B006BBE7A /* GoogleMaps.framework */; };
-		C1B33D4C1AD4A331006BBE7A /* GoogleMaps.bundle in Resources */ = {isa = PBXBuildFile; fileRef = C1B33D4B1AD4A331006BBE7A /* GoogleMaps.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +53,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		917DD5EC1AD7EF4C0095C18C /* GoogleMaps.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = "GoogleMaps-iOS-1.9.2/GoogleMaps.framework/Versions/A/Resources/GoogleMaps.bundle"; sourceTree = "<group>"; };
 		C18B719A1AD443DD0031A04F /* SeeYa_v74.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeeYa_v74.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C18B719E1AD443DD0031A04F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C18B719F1AD443DD0031A04F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -95,7 +96,6 @@
 		C18B71F91AD49AC90031A04F /* MapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapView.h; sourceTree = "<group>"; };
 		C18B71FA1AD49AC90031A04F /* MapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapView.m; sourceTree = "<group>"; };
 		C1B33D491AD4A30B006BBE7A /* GoogleMaps.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMaps.framework; sourceTree = "<group>"; };
-		C1B33D4B1AD4A331006BBE7A /* GoogleMaps.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = "../../Dev/GoogleMaps-iOS-1.9.2/GoogleMaps.framework/Versions/A/Resources/GoogleMaps.bundle"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,7 +132,7 @@
 		C18B71911AD443DD0031A04F = {
 			isa = PBXGroup;
 			children = (
-				C1B33D4B1AD4A331006BBE7A /* GoogleMaps.bundle */,
+				917DD5EC1AD7EF4C0095C18C /* GoogleMaps.bundle */,
 				C1B33D491AD4A30B006BBE7A /* GoogleMaps.framework */,
 				C18B71DC1AD44AC90031A04F /* AVFoundation.framework */,
 				C18B71DA1AD44ABF0031A04F /* CoreData.framework */,
@@ -319,7 +319,7 @@
 				C18B71EB1AD481700031A04F /* library.png in Resources */,
 				C18B71F01AD481700031A04F /* plus.png in Resources */,
 				C18B71EE1AD481700031A04F /* store.png in Resources */,
-				C1B33D4C1AD4A331006BBE7A /* GoogleMaps.bundle in Resources */,
+				917DD5ED1AD7EF4C0095C18C /* GoogleMaps.bundle in Resources */,
 				C18B71EF1AD481700031A04F /* park.png in Resources */,
 				C18B71AC1AD443DD0031A04F /* Main.storyboard in Resources */,
 				C18B71F11AD481700031A04F /* nightclub.png in Resources */,
@@ -474,10 +474,11 @@
 		C18B71C11AD443DD0031A04F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				FRAMEWORK_SEARCH_PATHS = (
+					"/Users/Korinel/seeya/GoogleMaps-iOS-1.9.2",
 					"$(inherited)",
-					"/Users/ImS/MEGA/Dev/GoogleMaps-iOS-1.9.2",
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = SeeYa_v74/Info.plist;
@@ -490,10 +491,11 @@
 		C18B71C21AD443DD0031A04F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				FRAMEWORK_SEARCH_PATHS = (
+					"/Users/Korinel/seeya/GoogleMaps-iOS-1.9.2",
 					"$(inherited)",
-					"/Users/ImS/MEGA/Dev/GoogleMaps-iOS-1.9.2",
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = SeeYa_v74/Info.plist;

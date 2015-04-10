@@ -6,8 +6,10 @@
 //  Copyright (c) 2015 Sergey Im. All rights reserved.
 //
 
-//#import <Cocoa/Cocoa.h>
+#import "Global.h"
 #import <UIKit/UIKit.h>
+
+
 @interface ContainerView : UIViewController
 @property (weak, nonatomic) IBOutlet UIButton *Done;
 -(void) queryGooglePlaces: (NSString *) googleType;

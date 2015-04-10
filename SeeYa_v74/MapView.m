@@ -8,10 +8,13 @@
 
 #import "MapView.h"
 #import <GoogleMaps/GoogleMaps.h>
+#import "Global.h"
+info_struct *place1, *place2, *place3;
 
 @interface MapView ()
 @property (weak, nonatomic) IBOutlet UISearchBar *Search_bar;
 @end
+
 
 @implementation MapView{
     GMSMapView *mapView_;
@@ -19,11 +22,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    /*
-     UISlider* slider = [[UISlider alloc] initWithFrame:CGRectMake(26, 219, 264, 23)];
-     [self.view addSubview:slider];
-     [slider release];
-     */
     GMSCameraPosition *camera = [GMSCameraPosition cameraWithLatitude: MainPoint1
                                                             longitude: MainPoint2
                                                                  zoom:10];
@@ -32,6 +30,9 @@
     mapView_.settings.myLocationButton = YES;
     mapView_.settings.zoomGestures = YES;
     self.view = mapView_;
+    place1 = [[info_struct alloc] init];
+    place2 = [[info_struct alloc] init];
+    place3 = [[info_struct alloc] init];
     
     GMSMarker *marker0 = [[GMSMarker alloc] init];
     marker0.position = CLLocationCoordinate2DMake([UserCoordinates[0] floatValue],[UserCoordinates[1] floatValue]);
@@ -47,21 +48,21 @@
     
     //Creates a marker in the center of the map.
     GMSMarker *marker = [[GMSMarker alloc] init];
-    marker.position = CLLocationCoordinate2DMake([place1_cr[0] floatValue], [place1_cr[1] floatValue]);
-    marker.title = place1_ad[0];
-    //marker.snippet = place1_ad[1];
+    marker.position = CLLocationCoordinate2DMake(place1.lat, place1.lng);
+    marker.title = place1.name;
+    marker.snippet = place1.address;
     marker.map = mapView_;
     
     GMSMarker *marker2 = [[GMSMarker alloc] init];
-    marker2.position = CLLocationCoordinate2DMake([place2_cr[0] floatValue], [place2_cr[1] floatValue]);
-    marker2.title = place2_ad[0];
-    //marker2.snippet = place2_ad[1];
+    marker2.position = CLLocationCoordinate2DMake(place2.lat, place2.lng);
+    marker2.title = place2.name;
+    marker2.snippet = place2.address;
     marker2.map = mapView_;
     
     GMSMarker *marker3 = [[GMSMarker alloc] init];
-    marker3.position = CLLocationCoordinate2DMake([place3_cr[0] floatValue], [place3_cr[1] floatValue]);
-    marker3.title = place3_ad[0];
-    // marker3.snippet = place3_ad[1];
+    marker3.position = CLLocationCoordinate2DMake(place3.lat, place3.lng);
+    marker3.title = place3.name;
+    marker3.snippet = place3.address;
     marker3.map = mapView_;
     
     UISlider* slider = [[UISlider alloc] initWithFrame:CGRectMake(249, 299, 99, 23)];

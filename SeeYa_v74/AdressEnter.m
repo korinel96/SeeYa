@@ -12,8 +12,8 @@
 @interface AdressEnter ()
 @end
 
-//NSString *KEY = @"AIzaSyAxYFweLCt2a10Hrxpk7hg5t-GGdbkc7fQ";
-NSString *KEY = @"AIzaSyChBwHJcC-oiESi-7qJ6htfbz3ivtYSJTg";
+NSString *KEY = @"AIzaSyAxYFweLCt2a10Hrxpk7hg5t-GGdbkc7fQ"; //Kim's key
+//NSString *KEY = @"AIzaSyChBwHJcC-oiESi-7qJ6htfbz3ivtYSJTg"; // ImS' key
 
 @implementation AdressEnter
 
@@ -44,7 +44,6 @@ NSString *KEY = @"AIzaSyChBwHJcC-oiESi-7qJ6htfbz3ivtYSJTg";
     NSArray* places = [json1 objectForKey:@"results"];
     if ([places count] != 0)
     {
-        //NSLog(@"check1");
         if(side == 1)
         {
             FriendCoordinates = [NSMutableArray arrayWithObjects:

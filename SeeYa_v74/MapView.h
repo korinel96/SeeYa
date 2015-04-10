@@ -15,7 +15,4 @@
     NSArray *TagString;
 }
 
--(void) queryGooglePlaces: (NSString *) googleType ;
--(void) fetchedData:(NSData *)responseData;
-
 @end
