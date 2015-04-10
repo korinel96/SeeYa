@@ -9,11 +9,12 @@
 #import "MapView.h"
 #import <GoogleMaps/GoogleMaps.h>
 #import "Global.h"
-info_struct *place1, *place2, *place3;
 
 @interface MapView ()
 @property (weak, nonatomic) IBOutlet UISearchBar *Search_bar;
 @end
+
+
 
 
 @implementation MapView{
@@ -30,9 +31,6 @@ info_struct *place1, *place2, *place3;
     mapView_.settings.myLocationButton = YES;
     mapView_.settings.zoomGestures = YES;
     self.view = mapView_;
-    place1 = [[info_struct alloc] init];
-    place2 = [[info_struct alloc] init];
-    place3 = [[info_struct alloc] init];
     
     GMSMarker *marker0 = [[GMSMarker alloc] init];
     marker0.position = CLLocationCoordinate2DMake([UserCoordinates[0] floatValue],[UserCoordinates[1] floatValue]);

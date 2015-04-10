@@ -17,6 +17,10 @@
 NSString *APIKEY = @"AIzaSyAxYFweLCt2a10Hrxpk7hg5t-GGdbkc7fQ"; //Kim's key
 //NSString *APIKEY = @"AIzaSyChBwHJcC-oiESi-7qJ6htfbz3ivtYSJTg"; //ImS' key
 
+@implementation info_struct
+@synthesize address, name, lng, lat, rating, price_lvl, open;
+@end
+
 @implementation ContainerView
 
 - (IBAction)DoneButton:(id)sender {
@@ -57,18 +61,15 @@ NSString *APIKEY = @"AIzaSyAxYFweLCt2a10Hrxpk7hg5t-GGdbkc7fQ"; //Kim's key
     NSArray* places = [json objectForKey:@"results"];
     if ([places count] != 0)
     {
-        place1.open = 2;
+        place1.open = false;
         place1.name = places[0][@"name"];
-        place1.address=places[0][@"vinicity"];
+        place1.address=places[0][@"vicinity"];
         place1.lat=[places[0][@"geometry"][@"location"][@"lat"] floatValue];
         place1.lng=[places[0][@"geometry"][@"location"][@"lng"] floatValue];
-        if ([places[0][@"opening_hours"][@"open_now"] isEqualToString: @"true"])
+        /*if (![places[0][@"opening_hours"][@"open_now"] isEmpty])
         {
-            place1.open = 1;
-        }
-        else {
-            place1.open = 0;
-        }
+            place1.open = true;
+        }*/
         place1.price_lvl = 0;
         place1.price_lvl = [places[0][@"price_level"] integerValue];
         place1.rating = 0.0;
@@ -78,16 +79,16 @@ NSString *APIKEY = @"AIzaSyAxYFweLCt2a10Hrxpk7hg5t-GGdbkc7fQ"; //Kim's key
     if ([places count] > 1)
     {
         place2.name = places[1][@"name"];
-        place2.address=places[1][@"vinicity"];
+        place2.address=places[1][@"vicinity"];
         place2.lat=[places[1][@"geometry"][@"location"][@"lat"] floatValue];
         place2.lng=[places[1][@"geometry"][@"location"][@"lng"] floatValue];
-        if ([places[1][@"opening_hours"][@"open_now"] isEqualToString: @"true"])
+       /* if ([places[1][@"opening_hours"][@"open_now"] isEqualToString: @"true"])
         {
             place2.open = 1;
         }
         else {
             place2.open = 0;
-        }
+        }*/
         place2.price_lvl = 0;
         place2.price_lvl = [places[1][@"price_level"] integerValue];
         place2.rating = 0.0;
@@ -97,16 +98,16 @@ NSString *APIKEY = @"AIzaSyAxYFweLCt2a10Hrxpk7hg5t-GGdbkc7fQ"; //Kim's key
     if ([places count] > 2)
     {
         place3.name = places[2][@"name"];
-        place3.address=places[2][@"vinicity"];
+        place3.address=places[2][@"vicinity"];
         place3.lat=[places[2][@"geometry"][@"location"][@"lat"] floatValue];
         place3.lng=[places[2][@"geometry"][@"location"][@"lng"] floatValue];
-        if ([places[2][@"opening_hours"][@"open_now"] isEqualToString: @"true"])
+        /*if ([places[2][@"opening_hours"][@"open_now"] isEqualToString: @"true"])
         {
             place3.open = 1;
         }
         else {
             place3.open = 0;
-        }
+        }*/
         place3.price_lvl = 0;
         place3.price_lvl = [places[2][@"price_level"] integerValue];
         place3.rating = 0.0;
