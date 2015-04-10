@@ -14,6 +14,7 @@
 @synthesize tagNum;
 
 - (void)viewDidLoad {
+    [[self navigationController] setNavigationBarHidden:NO animated:YES];
     self.title = @"Tags";
     //Нужно увеличить кол-во статических ячеек в storyboard при добавлении тегов
     self.tags = [NSArray arrayWithObjects:@"Meal",/*@"cafe",@"restaurant", @"bakery", @"meal_takeaway",*/ @"Store",@"Library",@"Night Club",@"Museum",@"Park", nil];

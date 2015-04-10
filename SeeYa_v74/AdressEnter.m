@@ -101,6 +101,8 @@ NSString *KEY = @"AIzaSyChBwHJcC-oiESi-7qJ6htfbz3ivtYSJTg";
     [self.AddFriendButton setImage:btnImage forState:UIControlStateNormal];
     //Прячет плюс
     [self.AddFriendButton setHidden:YES];
+//прячет navigation controller bar
+    [[self navigationController] setNavigationBarHidden:YES animated:YES];
     [super viewDidLoad];
     
 }
