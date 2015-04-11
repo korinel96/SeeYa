@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C13882451AD9C4DE00335A9F /* wallpaper.png in Resources */ = {isa = PBXBuildFile; fileRef = C13882441AD9C4DE00335A9F /* wallpaper.png */; };
 		C18B71A01AD443DD0031A04F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C18B719F1AD443DD0031A04F /* main.m */; };
 		C18B71A31AD443DD0031A04F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C18B71A21AD443DD0031A04F /* AppDelegate.m */; };
 		C18B71A61AD443DD0031A04F /* SeeYa_v74.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C18B71A41AD443DD0031A04F /* SeeYa_v74.xcdatamodeld */; };
@@ -58,6 +59,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C13882441AD9C4DE00335A9F /* wallpaper.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wallpaper.png; sourceTree = "<group>"; };
 		C18B719A1AD443DD0031A04F /* SeeYa_v74.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeeYa_v74.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C18B719E1AD443DD0031A04F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C18B719F1AD443DD0031A04F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -223,6 +225,7 @@
 		C18B71E11AD480920031A04F /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				C13882441AD9C4DE00335A9F /* wallpaper.png */,
 				C1E01AB11AD7F302009A118A /* share.png */,
 				C18B71E21AD481700031A04F /* check.png */,
 				C1B4F1F01AD96A28009E1FD6 /* HumanB.png */,
@@ -345,6 +348,7 @@
 				C1B4F1F51AD96A28009E1FD6 /* Food.png in Resources */,
 				C18B71EC1AD481700031A04F /* meal.png in Resources */,
 				C18B71B11AD443DD0031A04F /* LaunchScreen.xib in Resources */,
+				C13882451AD9C4DE00335A9F /* wallpaper.png in Resources */,
 				C18B71ED1AD481700031A04F /* museum.png in Resources */,
 				C18B71EA1AD481700031A04F /* check.png in Resources */,
 				C18B71AE1AD443DD0031A04F /* Images.xcassets in Resources */,
