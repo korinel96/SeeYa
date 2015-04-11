@@ -33,12 +33,14 @@
     GMSMarker *marker0 = [[GMSMarker alloc] init];
     marker0.position = CLLocationCoordinate2DMake([UserCoordinates[0] floatValue],[UserCoordinates[1] floatValue]);
     marker0.title = @"You are here";
+    marker0.icon=[UIImage imageNamed:@"HumanA.png"];
     //marker.snippet = place1_ad[1];
     marker0.map = mapView_;
     
     GMSMarker *marker00 = [[GMSMarker alloc] init];
     marker00.position = CLLocationCoordinate2DMake([FriendCoordinates[0] floatValue],[FriendCoordinates[1] floatValue]);
     marker00.title = @"Your Friend is here";
+    marker00.icon=[UIImage imageNamed:@"HumanB.png"];
     //marker.snippet = place1_ad[1];
     marker00.map = mapView_;
     
@@ -46,18 +48,21 @@
     GMSMarker *marker = [[GMSMarker alloc] init];
     marker.position = CLLocationCoordinate2DMake([place1_cr[0] floatValue], [place1_cr[1] floatValue]);
     marker.title = place1_ad[0];
+    marker.icon=[UIImage imageNamed:@"Food.png"];
     //marker.snippet = place1_ad[1];
     marker.map = mapView_;
     
     GMSMarker *marker2 = [[GMSMarker alloc] init];
     marker2.position = CLLocationCoordinate2DMake([place2_cr[0] floatValue], [place2_cr[1] floatValue]);
     marker2.title = place2_ad[0];
+    marker2.icon=[UIImage imageNamed:@"Food.png"];
     //marker2.snippet = place2_ad[1];
     marker2.map = mapView_;
     
     GMSMarker *marker3 = [[GMSMarker alloc] init];
     marker3.position = CLLocationCoordinate2DMake([place3_cr[0] floatValue], [place3_cr[1] floatValue]);
     marker3.title = place3_ad[0];
+    marker3.icon=[UIImage imageNamed:@"Food.png"];
     // marker3.snippet = place3_ad[1];
     marker3.map = mapView_;
     
