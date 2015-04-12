@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9121D6251AD9C66F0057649D /* employment.png in Resources */ = {isa = PBXBuildFile; fileRef = 9121D6231AD9C66F0057649D /* employment.png */; };
+		9121D6261AD9C66F0057649D /* professional.png in Resources */ = {isa = PBXBuildFile; fileRef = 9121D6241AD9C66F0057649D /* professional.png */; };
 		917DD5ED1AD7EF4C0095C18C /* GoogleMaps.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 917DD5EC1AD7EF4C0095C18C /* GoogleMaps.bundle */; };
 		C18B71A01AD443DD0031A04F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C18B719F1AD443DD0031A04F /* main.m */; };
 		C18B71A31AD443DD0031A04F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C18B71A21AD443DD0031A04F /* AppDelegate.m */; };
@@ -53,6 +55,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9121D6231AD9C66F0057649D /* employment.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = employment.png; sourceTree = "<group>"; };
+		9121D6241AD9C66F0057649D /* professional.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = professional.png; sourceTree = "<group>"; };
 		917DD5EC1AD7EF4C0095C18C /* GoogleMaps.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GoogleMaps.bundle; path = "GoogleMaps-iOS-1.9.2/GoogleMaps.framework/Versions/A/Resources/GoogleMaps.bundle"; sourceTree = "<group>"; };
 		C18B719A1AD443DD0031A04F /* SeeYa_v74.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SeeYa_v74.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C18B719E1AD443DD0031A04F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -217,6 +221,8 @@
 				C18B71E31AD481700031A04F /* library.png */,
 				C18B71E41AD481700031A04F /* meal.png */,
 				C18B71E51AD481700031A04F /* museum.png */,
+				9121D6231AD9C66F0057649D /* employment.png */,
+				9121D6241AD9C66F0057649D /* professional.png */,
 				C18B71E61AD481700031A04F /* store.png */,
 				C18B71E71AD481700031A04F /* park.png */,
 				C18B71E81AD481700031A04F /* plus.png */,
@@ -317,6 +323,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C18B71EB1AD481700031A04F /* library.png in Resources */,
+				9121D6251AD9C66F0057649D /* employment.png in Resources */,
+				9121D6261AD9C66F0057649D /* professional.png in Resources */,
 				C18B71F01AD481700031A04F /* plus.png in Resources */,
 				C18B71EE1AD481700031A04F /* store.png in Resources */,
 				917DD5ED1AD7EF4C0095C18C /* GoogleMaps.bundle in Resources */,

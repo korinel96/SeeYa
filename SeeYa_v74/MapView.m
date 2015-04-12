@@ -33,35 +33,46 @@
     self.view = mapView_;
     
     GMSMarker *marker0 = [[GMSMarker alloc] init];
+    marker0.icon = [UIImage imageNamed:@"employment.png"];
     marker0.position = CLLocationCoordinate2DMake([UserCoordinates[0] floatValue],[UserCoordinates[1] floatValue]);
     marker0.title = @"You are here";
     //marker.snippet = place1_ad[1];
     marker0.map = mapView_;
     
     GMSMarker *marker00 = [[GMSMarker alloc] init];
+    marker00.icon = [UIImage imageNamed:@"professional.png"];
     marker00.position = CLLocationCoordinate2DMake([FriendCoordinates[0] floatValue],[FriendCoordinates[1] floatValue]);
     marker00.title = @"Your Friend is here";
     //marker.snippet = place1_ad[1];
     marker00.map = mapView_;
     
     //Creates a marker in the center of the map.
+    if ([places count] > 0)
+    {
     GMSMarker *marker = [[GMSMarker alloc] init];
-    marker.position = CLLocationCoordinate2DMake(place1.lat, place1.lng);
-    marker.title = place1.name;
-    marker.snippet = place1.address;
+    marker.position = CLLocationCoordinate2DMake([places[0][@"geometry"][@"location"][@"lat"] floatValue], [places[0][@"geometry"][@"location"][@"lng"] floatValue]);
+    marker.title = places[0][@"name"];
+    marker.snippet = places[0][@"vicinity"];
     marker.map = mapView_;
+    };
     
+    if ([places count] > 1)
+    {
     GMSMarker *marker2 = [[GMSMarker alloc] init];
-    marker2.position = CLLocationCoordinate2DMake(place2.lat, place2.lng);
-    marker2.title = place2.name;
-    marker2.snippet = place2.address;
+    marker2.position = CLLocationCoordinate2DMake([places[1][@"geometry"][@"location"][@"lat"] floatValue], [places[1][@"geometry"][@"location"][@"lng"] floatValue]);
+    marker2.title = places[1][@"name"];
+    marker2.snippet = places[1][@"vicinity"];
     marker2.map = mapView_;
+    };
     
+    if ([places count] > 2)
+    {
     GMSMarker *marker3 = [[GMSMarker alloc] init];
-    marker3.position = CLLocationCoordinate2DMake(place3.lat, place3.lng);
-    marker3.title = place3.name;
-    marker3.snippet = place3.address;
+    marker3.position = CLLocationCoordinate2DMake([places[2][@"geometry"][@"location"][@"lat"] floatValue], [places[2][@"geometry"][@"location"][@"lng"] floatValue]);
+    marker3.title = places[2][@"name"];
+    marker3.snippet = places[2][@"vicinity"];
     marker3.map = mapView_;
+    };
     
     UISlider* slider = [[UISlider alloc] initWithFrame:CGRectMake(249, 299, 99, 23)];
     [slider addTarget:self action:@selector(mySliderChanged:) forControlEvents:UIControlEventValueChanged];

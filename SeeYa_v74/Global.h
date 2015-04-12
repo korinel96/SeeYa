@@ -11,27 +11,12 @@
 #import <Foundation/Foundation.h>
 #import "stdio.h"
 
-@interface info_struct : NSObject
-
-    @property   NSString *address;
-    @property   NSString *name;
-    @property   float lng;
-    @property   float lat;
-    @property   float rating;
-    @property   int price_lvl;
-    @property   BOOL open;
-
-@end
-
-
-
-//@end
 
 NSString *UserAdress;
 NSString *FriendAdress;
 NSString *TagString;
 NSMutableArray *UserCoordinates, *FriendCoordinates;
-info_struct *place1, *place2, *place3;
+NSArray *places;
 float MainPoint1;
 float MainPoint2;
 #endif
