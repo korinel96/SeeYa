@@ -8,6 +8,7 @@
 
 #import "AdressEnter.h"
 #import <GoogleMaps/GoogleMaps.h>
+#import "TagTable.h"
 
 @interface AdressEnter ()
 @end
@@ -19,15 +20,15 @@ NSString *KEY = @"AIzaSyChBwHJcC-oiESi-7qJ6htfbz3ivtYSJTg";
 
 //Получение координат?(wut) назови переменные нормально
 - (void) recieve_coor {
-    NSString *url2 = [NSString stringWithFormat:@"https://maps.googleapis.com/maps/api/place/textsearch/json?query=%@&sensor=true&key=%@", Adress1, KEY];
+    NSString *url1 = [NSString stringWithFormat:@"http://maps.googleapis.com/maps/api/geocode/json?address=%@&sensor=true_or_false", Adress1];
+    NSURL *googleRequestURL1=[NSURL URLWithString:[url1 stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
+    NSData* data1 = [NSData dataWithContentsOfURL: googleRequestURL1];
+    
+    [self fetchedData1:data1:1];
+    NSString *url2 = [NSString stringWithFormat:@"http://maps.googleapis.com/maps/api/geocode/json?address=%@&sensor=true_or_false", Adress2];
     NSURL *googleRequestURL2=[NSURL URLWithString:[url2 stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
     NSData* data2 = [NSData dataWithContentsOfURL: googleRequestURL2];
-    
-    [self fetchedData1:data2:1];
-    NSString *url3 = [NSString stringWithFormat:@"https://maps.googleapis.com/maps/api/place/textsearch/json?query=%@&sensor=true&key=%@", Adress2, KEY];
-    NSURL *googleRequestURL3=[NSURL URLWithString:[url3 stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding]];
-    NSData* data3 = [NSData dataWithContentsOfURL: googleRequestURL3];
-    [self fetchedData1:data3:2];
+    [self fetchedData1:data2:2];
     //[self performSelectorOnMainThread:@selector(fetchedData1::) withObject:data2:ad1 waitUntilDone:YES];
 }
 
@@ -83,7 +84,7 @@ NSString *KEY = @"AIzaSyChBwHJcC-oiESi-7qJ6htfbz3ivtYSJTg";
         Adress2 = [Adress2 stringByAppendingString:@"Moscow"];
         [self recieve_coor];
         //переходн на след. view
-        ContainerView *gotoVC = [self.storyboard instantiateViewControllerWithIdentifier:@"SecondView2"];
+        TagTable *gotoVC = [self.storyboard instantiateViewControllerWithIdentifier:@"SecondView2"];
         [self.navigationController pushViewController:gotoVC animated:YES];
     }
     

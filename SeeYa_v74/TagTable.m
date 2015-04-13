@@ -124,10 +124,10 @@ NSString *APIKEY2 = @"AIzaSyChBwHJcC-oiESi-7qJ6htfbz3ivtYSJTg";
 - (void) queryGooglePlaces: (NSString *) googleType {
     MainPoint1=([UserCoordinates[0] floatValue]+[FriendCoordinates[0] floatValue])/2;
     MainPoint2=([FriendCoordinates[1] floatValue]+[UserCoordinates[1] floatValue])/2;
-    // NSLog(@"MAIN1%f_MAIN2%f_1%@_2%@_3%@_4%@",MainPoint2,MainPoint1,urcr[0],urcr[1],frcr[0],frcr[1]);
-    NSString *URL = [NSString stringWithFormat:@"https://maps.googleapis.com/maps/api/place/search/json?location=%f,%f&radius=%@&types=%@&sensor=false&key=%@", MainPoint1, MainPoint2, [NSString stringWithFormat:@"%i", 500], googleType, APIKEY2];
+    NSString *URL = [NSString stringWithFormat:@"https://maps.googleapis.com/maps/api/place/search/json?location=%f,%f&radius=%@&types=%@&sensor=false&key=%@", MainPoint1, MainPoint2, [NSString stringWithFormat:@"%i", 1000], googleType, APIKEY2];
     NSURL *googleRequestURL=[NSURL URLWithString:URL];
     NSData* data = [NSData dataWithContentsOfURL: googleRequestURL];
+    NSLog(URL);
     [self fetchedData:data];
     // [self performSelectorOnMainThread:@selector(fetchedData:) withObject:data waitUntilDone:YES];
     
@@ -142,36 +142,7 @@ NSString *APIKEY2 = @"AIzaSyChBwHJcC-oiESi-7qJ6htfbz3ivtYSJTg";
                           options:kNilOptions
                           error:&error];
     
-    NSArray* places = [json objectForKey:@"results"];
-    if ([places count] != 0)
-    {
-        //NSLog(@"check1");
-        
-        place1_ad = [NSMutableArray arrayWithObjects:
-                     places[0][@"name"], places[0][@"vinicity"],nil];
-        place1_cr = [NSMutableArray arrayWithObjects:
-                     places[0][@"geometry"][@"location"][@"lat"], places[0][@"geometry"][@"location"][@"lng"], nil];
-    };
-    if ([places count] > 1)
-    {
-        //NSLog(@"check2");
-        
-        place2_ad = [NSMutableArray arrayWithObjects:
-                     places[1][@"name"], places[1][@"vinicity"],nil];
-        place2_cr = [NSMutableArray arrayWithObjects:
-                     places[1][@"geometry"][@"location"][@"lat"], places[1][@"geometry"][@"location"][@"lng"], nil];
-    };
-    
-    if ([places count] > 2)
-    {
-        //NSLog(@"check3");
-        
-        place3_ad = [NSMutableArray arrayWithObjects:
-                     places[2][@"name"], places[2][@"vinicity"],nil];
-        place3_cr = [NSMutableArray arrayWithObjects:
-                     places[2][@"geometry"][@"location"][@"lat"], places[2][@"geometry"][@"location"][@"lng"], nil];
-    };
-    
+    all_places = [json objectForKey:@"results"];
 }
 
 

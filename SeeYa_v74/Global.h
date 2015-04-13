@@ -12,9 +12,7 @@
 NSString *UserAdress;
 NSString *FriendAdress;
 NSString *TagString;
-NSMutableArray *place1_ad, *place1_cr;
-NSMutableArray *place2_ad, *place2_cr;
-NSMutableArray *place3_ad, *place3_cr;
+NSArray* all_places;
 NSMutableArray *UserCoordinates, *FriendCoordinates;
 
 float MainPoint1;
