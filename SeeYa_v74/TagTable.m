@@ -7,13 +7,16 @@
 //
 
 #import "TagTable.h"
+#import "MapView.h"
 
 
 @implementation TagTable
 @synthesize tags;
 @synthesize tagNum;
+@synthesize PoluchilStr;
 
 - (void)viewDidLoad {
+    NSLog(@"%@", self.PoluchilStr);
     [[self navigationController] setNavigationBarHidden:NO animated:YES];
     self.title = @"Tags";
     //Нужно увеличить кол-во статических ячеек в storyboard при добавлении тегов
@@ -117,8 +120,27 @@ NSString *APIKEY2 = @"AIzaSyChBwHJcC-oiESi-7qJ6htfbz3ivtYSJTg";
 
 - (IBAction)DoneButton:(id)sender {
     TagString = [TagString substringToIndex:[TagString length]-1];
+    [self performSegueWithIdentifier:@"Segue2" sender:sender];
     [self queryGooglePlaces: TagString];
 }
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    if ([[segue identifier] isEqualToString:@"Segue2"]) {
+        
+        // Get destination view
+        MapView *vc = [segue destinationViewController];
+        
+        NSArray *tagIndex;
+        tagIndex = [NSArray arrayWithObjects:@"Meal",/*@"cafe",@"restaurant", @"bakery", @"meal_takeaway",*/ @"Store",@"Library",@"Night Club",@"Museum",@"Park", nil];
+        NSString *strtry= @"blahahbar";
+        
+        // Set the selected button in the new view
+        [vc setPuluchilArr: tagIndex];
+        [vc setPoluchilStr: strtry];
+    }
+}
+
 
 //wtf is it?
 - (void) queryGooglePlaces: (NSString *) googleType {

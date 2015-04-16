@@ -16,10 +16,11 @@
 @implementation MapView{
     GMSMapView *mapView_;
 }
-
-//@synthesize ShareButton;
+@synthesize PoluchilStr;
 
 - (void)viewDidLoad {
+    NSLog(@"%@", PoluchilStr);
+    NSLog(@"%@", self.PuluchilArr[0]);
     [super viewDidLoad];
     GMSCameraPosition *camera = [GMSCameraPosition cameraWithLatitude: MainPoint1
                                                             longitude: MainPoint2

@@ -13,9 +13,13 @@
 
 @interface MapView : UIViewController{
     NSArray *TagString;
+    NSString *PuluchilArr;
+    NSArray* all_places;
 }
 
 -(void) queryGooglePlaces: (NSString *) googleType ;
 -(void) fetchedData:(NSData *)responseData;
+@property (nonatomic, readwrite) NSArray* PuluchilArr;
+@property (readwrite, nonatomic) NSString *PoluchilStr;
 @property (weak, nonatomic) IBOutlet UIButton *ShareButton;
 @end

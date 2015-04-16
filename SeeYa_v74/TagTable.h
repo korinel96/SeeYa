@@ -11,8 +11,11 @@
 
 @interface TagTable :UITableViewController{
     NSArray *tags;
+    NSString *PoluchilStr;
 }
 
+
+@property (readwrite, nonatomic) NSString *PoluchilStr;
 @property (weak, nonatomic) IBOutlet UIButton *Done2;
 @property (nonatomic, assign) NSInteger *tagNum;
 @property(retain)  NSIndexPath* lastIndexPath;

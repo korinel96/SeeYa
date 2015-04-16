@@ -85,6 +85,7 @@ NSString *KEY = @"AIzaSyChBwHJcC-oiESi-7qJ6htfbz3ivtYSJTg";
         [self recieve_coor];
         //переходн на след. view
         TagTable *gotoVC = [self.storyboard instantiateViewControllerWithIdentifier:@"SecondView2"];
+        gotoVC.PoluchilStr= @"ablah";
         [self.navigationController pushViewController:gotoVC animated:YES];
     }
     
