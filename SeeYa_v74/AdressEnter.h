@@ -7,20 +7,26 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "Global.h"
+@interface customS : NSObject
+    
 
-NSString *Adress1;
-NSString *Adress2;
-NSString *lp;
-NSArray *uad, *fad;
+@end
+@interface AdressEnter : UIViewController{
+    NSString *Adress1;
+    NSString *Adress2;
+    NSString *lp;
+    NSArray *uad, *fad;
+    NSArray *UserCoordinates, *FriendCoordinates;
+    float MainPoint1, MainPoint2;
+    NSString *UserAdress;
+    NSString *FriendAdress;
+}
 
-@interface AdressEnter : UIViewController
+
 
 @property (weak, nonatomic) IBOutlet UITextField *FriendsAdress;
-
 @property (weak, nonatomic) IBOutlet UILabel *errorLabel;
 @property (weak, nonatomic) IBOutlet UITextField *UserAdress;
-
 @property (weak, nonatomic) IBOutlet UIButton *CheckButton;
 @property (weak, nonatomic) IBOutlet UIButton *AddFriendButton;
 

@@ -9,6 +9,7 @@
 #import "AdressEnter.h"
 #import <GoogleMaps/GoogleMaps.h>
 #import "TagTable.h"
+#import "MapView.h"
 
 @interface AdressEnter ()
 @end
@@ -42,21 +43,22 @@ NSString *KEY = @"AIzaSyChBwHJcC-oiESi-7qJ6htfbz3ivtYSJTg";
                            options:kNilOptions
                            error:&error1];
     
-    NSArray* places = [json1 objectForKey:@"results"];
-    if ([places count] != 0)
+    NSArray* places_for = [json1 objectForKey:@"results"];
+    if ([places_for count] != 0)
     {
-        //NSLog(@"check1");
         if(side == 1)
         {
             FriendCoordinates = [NSMutableArray arrayWithObjects:
-                    places[0][@"geometry"][@"location"][@"lat"], places[0][@"geometry"][@"location"][@"lng"], nil];
+                    places_for[0][@"geometry"][@"location"][@"lat"], places_for[0][@"geometry"][@"location"][@"lng"], nil];
         }
         else
         {
             UserCoordinates = [NSMutableArray arrayWithObjects:
-                    places[0][@"geometry"][@"location"][@"lat"], places[0][@"geometry"][@"location"][@"lng"], nil];
+                    places_for[0][@"geometry"][@"location"][@"lat"], places_for[0][@"geometry"][@"location"][@"lng"], nil];
         }
     }
+    MainPoint1=([UserCoordinates[0] floatValue]+[FriendCoordinates[0] floatValue])/2;
+    MainPoint2=([UserCoordinates[1] floatValue]+[FriendCoordinates[1] floatValue])/2;
 }
 
 - (IBAction)CheckButton:(id)sender{
@@ -85,7 +87,10 @@ NSString *KEY = @"AIzaSyChBwHJcC-oiESi-7qJ6htfbz3ivtYSJTg";
         [self recieve_coor];
         //переходн на след. view
         TagTable *gotoVC = [self.storyboard instantiateViewControllerWithIdentifier:@"SecondView2"];
-        gotoVC.PoluchilStr= @"ablah";
+        [gotoVC setUserCoordinates:UserCoordinates];
+        [gotoVC setFriendCoordinates:FriendCoordinates];
+        [gotoVC setMainPoint1:MainPoint1];
+        [gotoVC setMainPoint2:MainPoint2];
         [self.navigationController pushViewController:gotoVC animated:YES];
     }
     

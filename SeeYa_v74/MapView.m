@@ -16,11 +16,15 @@
 @implementation MapView{
     GMSMapView *mapView_;
 }
-@synthesize PoluchilStr;
+@synthesize FriendCoordinates;
+@synthesize UserCoordinates;
+@synthesize all_places;
+@synthesize MainPoint1;
+@synthesize MainPoint2;
+
 
 - (void)viewDidLoad {
-    NSLog(@"%@", PoluchilStr);
-    NSLog(@"%@", self.PuluchilArr[0]);
+    NSLog(@"%@", all_places[0][@"name"]);
     [super viewDidLoad];
     GMSCameraPosition *camera = [GMSCameraPosition cameraWithLatitude: MainPoint1
                                                             longitude: MainPoint2

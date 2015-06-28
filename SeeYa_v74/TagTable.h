@@ -7,17 +7,23 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "Global.h"
 
 @interface TagTable :UITableViewController{
     NSArray *tags;
-    NSString *PoluchilStr;
+    NSMutableArray* places;
+    NSArray *UserCoordinates;
+    NSArray *FriendCoordinates;
+    float MainPoint1, MainPoint2;
+    NSString *TagString;
+
 }
 
 
-@property (readwrite, nonatomic) NSString *PoluchilStr;
 @property (weak, nonatomic) IBOutlet UIButton *Done2;
-@property (nonatomic, assign) NSInteger *tagNum;
+@property (nonatomic, assign) float MainPoint1;
+@property (nonatomic, assign) float MainPoint2;
+@property (readwrite, nonatomic) NSArray* FriendCoordinates;
+@property (readwrite, nonatomic) NSArray* UserCoordinates;
 @property(retain)  NSIndexPath* lastIndexPath;
 @property (nonatomic, retain) NSArray *tags;
 

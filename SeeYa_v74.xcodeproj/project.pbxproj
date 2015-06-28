@@ -86,7 +86,6 @@
 		C18B71D81AD44AB40031A04F /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		C18B71DA1AD44ABF0031A04F /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		C18B71DC1AD44AC90031A04F /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		C18B71E01AD47E3E0031A04F /* Global.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Global.h; sourceTree = "<group>"; };
 		C18B71E21AD481700031A04F /* check.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = check.png; sourceTree = "<group>"; };
 		C18B71E31AD481700031A04F /* library.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = library.png; sourceTree = "<group>"; };
 		C18B71E41AD481700031A04F /* meal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = meal.png; sourceTree = "<group>"; };
@@ -177,7 +176,6 @@
 				C18B71E11AD480920031A04F /* Images */,
 				C18B71A71AD443DD0031A04F /* AdressEnter.h */,
 				C18B71A81AD443DD0031A04F /* AdressEnter.m */,
-				C18B71E01AD47E3E0031A04F /* Global.h */,
 				C18B71F61AD495D60031A04F /* TagTable.h */,
 				C18B71F71AD495D60031A04F /* TagTable.m */,
 				C18B71F91AD49AC90031A04F /* MapView.h */,

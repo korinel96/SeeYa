@@ -7,19 +7,20 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "Global.h"
 #define kBgQueue dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)
 
 
 @interface MapView : UIViewController{
-    NSArray *TagString;
-    NSString *PuluchilArr;
-    NSArray* all_places;
+    NSArray *UserCoordinates;
+    NSArray *FriendCoordinates;
+    NSMutableArray *all_places;
+    float MainPoint1, MainPoint2;
 }
 
--(void) queryGooglePlaces: (NSString *) googleType ;
--(void) fetchedData:(NSData *)responseData;
-@property (nonatomic, readwrite) NSArray* PuluchilArr;
-@property (readwrite, nonatomic) NSString *PoluchilStr;
+@property (nonatomic, readwrite) NSArray* all_places;
+@property (readwrite, nonatomic) NSArray* FriendCoordinates;
+@property (readwrite, nonatomic) NSArray* UserCoordinates;
+@property (nonatomic, assign) float MainPoint1;
+@property (nonatomic, assign) float MainPoint2;
 @property (weak, nonatomic) IBOutlet UIButton *ShareButton;
 @end
